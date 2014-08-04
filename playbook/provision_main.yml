@@ -1,0 +1,6 @@
+- hosts: all
+  sudo: true
+  user: vagrant
+  tasks:
+    - include: essential.yml  tags=essential
+

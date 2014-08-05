@@ -1,0 +1,20 @@
+---
+
+# catalyst.yml
+- name: Update pkgs
+  apt: update_cache=yes
+
+- name: Upgrade pkgs
+  apt: upgrade=full
+
+- name: Install mysql-client
+  apt: pkg={{ item }} force=yes update_cache=yes
+  with_items:
+    - libmysqlclient-dev
+    - libexpat1-dev
+    - libyaml
+
+
+
+
+

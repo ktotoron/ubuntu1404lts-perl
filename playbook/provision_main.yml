@@ -5,4 +5,6 @@
     - include: essential.yml  tags=essential
     - include: mysql.yml  tags=mysql
     - include: plenv.yml  tags=plenv
+    - include: vim.yml  tags=vim
+
 

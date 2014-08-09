@@ -40,7 +40,7 @@
   sudo_user: vagrant
 
 - name: Install .vimrc for perl
-  shell: ln -s ~/.settings/vim/vimrc_for_perl.git/vimrc/perl.vimrc ~/.vimrc
+  command: ln -s ~/.settings/vim/vimrc_for_perl.git/vimrc/perl.vimrc ~/.vimrc creates=~/.vimrc
   sudo: yes
   sudo_user: vagrant
 
